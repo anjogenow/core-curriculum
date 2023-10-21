@@ -6,7 +6,7 @@
 /*   By: agenow <agenow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 15:39:48 by agenow            #+#    #+#             */
-/*   Updated: 2023/10/21 16:01:57 by agenow           ###   ########.fr       */
+/*   Updated: 2023/10/21 16:24:50 by agenow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,12 @@ char	*ft_strdup(char *src)
 	while (src[i])
 		i++;
 	len = i;
+	if (len == 0)
+		return (NULL);
 	i = 0;
 	dest = (char *) malloc((len + 1) * sizeof(char));
 	if (!dest)
-		return (dest);
+		return (NULL);
 	while (src[i])
 	{
 		dest[i] = src[i];
