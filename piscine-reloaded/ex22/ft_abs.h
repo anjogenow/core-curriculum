@@ -6,8 +6,17 @@
 /*   By: agenow <agenow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 16:44:41 by agenow            #+#    #+#             */
-/*   Updated: 2023/10/21 16:44:47 by agenow           ###   ########.fr       */
+/*   Updated: 2023/10/22 17:55:12 by agenow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #define ABS(Value) (Value >= 0) ? Value : -Value
+/*
+#include <stdio.h>
+#include "ft_abs.h"
+
+int	main(void)
+{
+	printf("%d, %d\n", -5, ABS(-5));
+}
+*/
